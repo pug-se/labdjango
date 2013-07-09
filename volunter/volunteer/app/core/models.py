@@ -24,6 +24,9 @@ class Organization(DefaultFields):
     site = models.URLField(null=True, blank=True)
     cnpj = models.CharField(max_length=14, null=True, blank=True)
 
+    def __unicode__(self):
+        return self.name
+
 
 class Opportunity(DefaultFields):
     # relation
@@ -40,6 +43,9 @@ class Opportunity(DefaultFields):
 
     class Meta:
         verbose_name_plural = 'Opportunities'
+
+    def __unicode__(self):
+        return self.title
 
 
 class Collaboration(DefaultFields):
