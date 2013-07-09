@@ -38,6 +38,9 @@ class Opportunity(DefaultFields):
     max_volunteer = models.IntegerField(null=True, blank=True)
     site = models.URLField()
 
+    class Meta:
+        verbose_name_plural = 'Opportunities'
+
 
 class Collaboration(DefaultFields):
     opportunity = models.ForeignKey('Opportunity', related_name='collaborations')
