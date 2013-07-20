@@ -123,7 +123,7 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'django.contrib.admin',
     # our
-    'volunteer.apps.core',
+    'apps.core',
 )
 
 # A sample logging configuration. The only tangible logging
